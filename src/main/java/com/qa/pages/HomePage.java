@@ -24,17 +24,9 @@ public class HomePage extends TestBase {
     @FindBy(xpath = "//*[@id='container']/div[2]/div[3]/section/div/div[1]/header")
 	WebElement recentBlogs;
 
-	@FindBy(xpath="//a[contains(text(),'Contacts')]")
-	WebElement contactLink;
-
-	@FindBy(xpath="//a[contains(text(),'Deals')]")
-	WebElement dealsLink;
-
-	@FindBy(xpath="//a[contains(text(),'Tasks')]")
-	WebElement tasksLink;
-
-	@FindBy(xpath="//a[contains(text(),'New Contact')]")
-	WebElement newcontactlink;
+	//*[@id='container']/div[2]/div[3]/section/div/div[2]/article/div/h3/a
+    @FindBy(xpath = "//*[@id='container']/div[2]/div[3]/section/div/div[2]/article/div/h3/a")
+	WebElement firstBlogArticle;
 
 	public HomePage() throws IOException {
 		//super();
@@ -51,28 +43,16 @@ public class HomePage extends TestBase {
 		return userNameLabel.isDisplayed();
 	}
 
-	public boolean verifyRecentBlogsDisplayed()
-	{
-		System.err.println("----------====================================="+recentBlogs.getTagName());
-		Assert.assertEquals(recentBlogs.getTagName(),"recent blogs");
-		System.err.println("recent blogs exist ");
+	public boolean verifyRecentBlogsDisplayed()	{
+		Assert.assertEquals(recentBlogs.getText(),"RECENT BLOGS");
 		return true;
-
 	}
 
-	public void clickOnNewContactLink()
-	{
-		Actions action = new Actions(driver);
-		action.moveToElement(contactLink).build().perform();
-		newcontactlink.click();
+
+	public void clickOnfirstBlogArticlelink(){
+		Assert.assertEquals(firstBlogArticle.isDisplayed(),true);
+		Assert.assertEquals(firstBlogArticle.getText(),"The future for DevOps");
+		firstBlogArticle.click();
 	}
-
-//    public void setAcceptCookies()
-//    {
-//		System.err.println("setAcceptCookies Start");
-//         acceptCookies.click();
-//		System.err.println("setAcceptCookies End");
-//    }
-
-
+	
 }
