@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="47.846407">
+<testcase classname="Valtech Web test" name="Validate Valtech test" time="47.846407">
+<system-out><![CDATA[Given user opens browser....................................................passed
+When user is on veltech home page...........................................passed
+Then validate homepage title................................................passed
+When User is on the recent blogs page.......................................passed
+Then validate recent blogs page title.......................................passed
+And validate about page header h1...........................................passed
+And validate work page header h1............................................passed
+And validate service page header h1.........................................passed
+And count the total number of office........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
