@@ -1,0 +1,148 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Validate Valtech test",
+        "description": "",
+        "id": "valtech-web-test;validate-valtech-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 26386554463,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens browser",
+            "match": {
+              "location": "HomePageSteps.user_opens_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4711101427,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on veltech home page",
+            "match": {
+              "location": "HomePageSteps.user_is_on_veltech_home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39396947,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "validate homepage title",
+            "match": {
+              "location": "HomePageSteps.validateHomepageTitle()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 136904804,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is on the recent blogs page",
+            "match": {
+              "location": "HomePageSteps.userIsOnTheRecentBlogsPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 178830921,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "validate recent blogs page title",
+            "match": {
+              "location": "HomePageSteps.validateBlogPageTitle()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3408803028,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "validate about page header h1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 28
+                }
+              ],
+              "location": "HomePageSteps.validateAboutPageHeaderH(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8318968341,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "validate work page header h1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 27
+                }
+              ],
+              "location": "HomePageSteps.validateWorkPageHeaderH(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1377805200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "validate service page header h1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 30
+                }
+              ],
+              "location": "HomePageSteps.validateServicePageHeaderH(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3288041569,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "count the total number of office",
+            "match": {
+              "location": "HomePageSteps.countTheTotalNumberOfOffice()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Valtech Web test",
+    "description": "",
+    "id": "valtech-web-test",
+    "keyword": "Feature",
+    "uri": "src/main/java/com/qa/features/freecrm.feature"
+  }
+]
